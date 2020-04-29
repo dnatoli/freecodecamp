@@ -4,56 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
+    <link href="index.css" rel="stylesheet" />
 </head>
 <body>
-    <h1 id="title">Dog Survey</h1>
-    <p id="description">Many internet-goers are "Cat People," but this survey is for dog-lovers everywhere!</p>
-    <form id="survey-form" action="/submit-dog-info">
-        <label id="name-label" for="name">Name
-            <input id="name" type="text" placeholder="Name">
-        </label>
-        <label id="email-label" for="email">Email
-            <input id="email" type="email" placeholder="Email Address">
-        </label>
-        <label id="number-label" for="number">Age
-            <input id="number" type="number" placeholder="Age" min=0 max=120>
-        </label>
-        <label id="dropdown-label" for="dropdown">What kind of dog do you have?
-            <select id="dropdown" name="dropdown">
-                <option value="Golden Retriever">Golden Retriever</option>
-                <option value="English Bulldog">English Bulldog</option>
-                <option value="Chihuahua">Chihuahua</option>
-                <option value="Poodle">Poodle</option>
-                <option value="Shiba Inu">Shiba Inu</option>
-                <option value="Other">Other</option>
-            </select>
-        </label>
-        <label id="radio-label">How old is your dog?
-            <label>
-                <input name="radio" type="radio" value="0-2 years">
-            </label>0-2 years
-            <label>
-                <input name="radio" type="radio" value="2-7 years">
-            </label>2-7 years
-            <label>
-                <input name="radio" type="radio" value="7+ years">
-            </label>7+ years
-        </label>
-        <label>Why do you love your dog?
-            <label>Cute
-                <input type="checkbox" name="checkbox" value="Cute">
+    <main>
+        <h1 id="title">Dog Survey</h1>
+        <p id="description">Many internet-goers are "Cat People," but this survey is for dog-lovers everywhere!</p>
+        <form id="survey-form" action="/submit-dog-info">
+            <label id="name-label" for="name">Name
+                <input id="name" type="text" placeholder="Name">
             </label>
-            <label>Happy
-                <input type="checkbox" name="checkbox" value="Happy">
+            <label id="email-label" for="email">Email
+                <input id="email" type="email" placeholder="Email Address">
             </label>
-            <label>Loving
-                <input type="checkbox" name="checkbox" value="Loving">
+            <label id="number-label" for="number">Age
+                <input id="number" type="number" placeholder="Age" min=0 max=120>
+            </label>
+            <label id="dropdown-label" for="dropdown">What kind of dog do you have?
+                <select id="dropdown" name="dropdown">
+                    <option value="Golden Retriever">Golden Retriever</option>
+                    <option value="English Bulldog">English Bulldog</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Poodle">Poodle</option>
+                    <option value="Shiba Inu">Shiba Inu</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+            <label id="radio-label">How old is your dog?
+                <label>
+                    <input name="radio" type="radio" value="0-2 years">
+                </label>0-2 years
+                <label>
+                    <input name="radio" type="radio" value="2-7 years">
+                </label>2-7 years
+                <label>
+                    <input name="radio" type="radio" value="7+ years">
+                </label>7+ years
+            </label>
+            <label>Why do you love your dog?
+                <label>Cute
+                    <input type="checkbox" name="checkbox" value="Cute">
+                </label>
+                <label>Happy
+                    <input type="checkbox" name="checkbox" value="Happy">
+                </label>
+                <label>Loving
+                    <input type="checkbox" name="checkbox" value="Loving">
+                </label>
             </label>
             <label>Anything else you want to say about your dog?
                 <textarea>Enter comments about your dog here</textarea>
             </label>
-        </label>
-        <button type="submit">Submit</button>
-    </form>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>

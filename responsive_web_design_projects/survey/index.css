@@ -1,0 +1,31 @@
+body {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+label {
+    text-align: center;
+}
+
+button {
+    align-self: center;
+    width: 25%;
+}
