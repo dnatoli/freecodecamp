@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <header>
+                <h2>Python Documentation</h2>
+            </header>
+            <a class="nav-link" href="#Variables">Variables</a>
+            <a class="nav-link" href="#Functions">Functions</a>
+            <a class="nav-link" href="#Control_Flow">Control Flow</a>
+            <a class="nav-link" href="#Lists">Lists</a>
+            <a class="nav-link" href="#Classes">Classes</a>
+            <a class="nav-link" href="Lambdas">Lambdas</a>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Variables">
+            <header>
+                <h2>Variables</h2>
+            </header>
+            <pre>
+        <code>x = 1
+        name = "Dante"
+        x = name</code>
+            </pre>
+            <p>Variables in Python are not statically typed. You don't need to declare the type of object you are referring to with a variable.</p>
+            <p>Python variables are dynamically typed, so you can change the type of object being pointed to by a single variable.</p>
+            <p>Python variables can be</p>
+            <ul>
+                <li>integers</li>
+                <li>floating point numbers</li>
+                <li>strings</li>
+                <li>objects</li>
+                <li>functions</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>
+                <h2>Functions</h2>
+            </header>
+            <pre>
+        <code>def foo(bar):
+            print(bar)</code>
+            </pre>
+            <p>Functions in Python do not specify a return type or a type for the arguments. Scope is maintained by consistent indentation of four spaces.</p>
+        </section>
+        <section class="main-section" id="Control_Flow">
+            <header>
+                <h2>Control Flow</h2>
+            </header>
+            <pre>
+        <code>
+        if not foo:
+            print("False")
+        elif foo:
+            print("True")
+        else:
+            print("This can't happen")
+        </code>
+        <code>
+        for foo in foos:
+            print(foo)
+        for i in range(len(foos)):
+            print(foos[i])
+        </code>
+            </pre>
+            <p>Control flow statements are scoped similarly to functions. Python "for" loops use iterators by default, so to use indexes, you instead make a range array.</p>
+        </section>
+        <section class="main-section" id="Lists">
+            <header>
+                <h2>Lists and Tuples</h2>
+            </header>
+            <pre>
+                <code>
+        list = [1, 2, 3]
+        list += [4, 5]
+        list.append(6)
+
+        [print(i) for i in list]
+
+        tuple = (1, 2)
+        tuple2 = tuple + (3, 4)
+                </code>
+            </pre>
+            <p>Lists and tuples are the main array structure in Python. Tuples are immutable, so once they are created you can't change them and must create a new one if needed.
+                There are not restrictions on the types of objects put into a list or tuple, and they can contain more than one type of object at the same time.
+            </p>
+            <p>Lists are mutable and can have elements added or removed with a variety of methods. List comprehensions are a way of iterating over collections using a concise syntax.</p>
+        </section>
+        <section class="main-section" id="Classes">
+            <header>
+                <h2>Classes</h2>
+            </header>
+            <pre>
+                <code>
+        class Foo:
+            def __init__(self):
+                self.bar = "bar"
+            def doThing(self):
+                print(self.bar)
+        
+        foo = Foo()
+        foo.doThing()
+                </code>
+            </pre>
+            <p>Python is an object-oriented language, so it has a syntax for defining classes to encapsulate data and behavior.</p>
+            <p>Instance methods require "self" as the first parameter, and are called with standard "." syntax. Fields/instance variables are declared
+                in the initializer method and are public.
+            </p>
+        </section>
+        <section class="main-section" id="Lambdas">
+            <header>
+                <h2>Lambdas</h2>
+            </header>
+            <pre>
+                <code>
+        foo = lambda x: print(x)
+        foo("Hello world")
+                </code>
+            </pre>
+            <p>Python lambda function syntax is pretty simple.</p>
+            <p>You can include multiple parameters, capture variables in scope, and assign to a variable.</p>
+        </section>
+    </main>
+</body>
+</html>
