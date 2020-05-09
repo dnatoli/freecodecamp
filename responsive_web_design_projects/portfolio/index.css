@@ -1,0 +1,68 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 50px;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: lightgray;
+    line-height: 50px;
+}
+
+#welcome-section {
+    text-align: center;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#welcome-text {
+    font-size: 25px;
+}
+
+#projects {
+    text-align: center;
+    background-color: cadetblue;
+    color: beige;
+}
+
+#projects-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-tile {
+    background-color: aquamarine;
+    color: white;
+    height: 75px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 75px;
+}
+
+#contact {
+    text-align: center;
+    background-color: slategray;
+    color: white;
+}
+
+@media (max-width: 400px) {
+    .project-tile {
+        background-color: aquamarine;
+        color: white;
+        height: 60px;
+        width: 120px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 60px;
+    }
+}
